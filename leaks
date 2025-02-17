@@ -1,0 +1,25 @@
+API_KEY = "sk_live_xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"  # Stripe secret key
+API_KEY  = "sk_live_xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"  # Stripe secret key
+SECRET_KEY = "your_secret_key_here"
+API-KEY = "sk_live_xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"  # Stripe secret key
+APIKEY = "sk_live_xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"  # Stripe secret key
+PASS = "password"
+password = "mypassw0rd"
+LOGIN_PASS = "pass"
+LOGIN-PASS = "pass"
+MYPASS = "test"
+KEY = "your_secret_key_here"
+LOGIN_KEY = "your_secret_key_here"
+LOGIN-KEY = "your_secret_key_here"
+SECRET = "your_secret_key_here"
+
+# database.js
+
+const dbURL = "mongodb://user:password@yourdatabase.com:27017/mydatabase";
+
+# deploy.sh
+
+#!/bin/bash
+
+export AWS_ACCESS_KEY_ID="AKIAIOSFODNN7EXAMPLE"
+export AWS_SECRET_ACCESS_KEY="wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
