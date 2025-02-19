@@ -2,12 +2,19 @@
 vcenter_sso_password: 'aristaarista'
 vcenter_sso_password: "aristaarista"
 
+
 # AWS Credentials
 AWS_ACCESS_KEY_ID=AKIA4YFAKQ7VCXN5RNWJ
 AWS_SECRET_ACCESS_KEY=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
 AWS_DEFAULT_REGION=us-west-2
 AWS_SESSION_TOKEN=IQoJb3JpZ2luX2VjEIz//////////wEaCXVzLWVhc3QtMSJHMEUCIQDEabC6nkY9UHJi0wA9qBGHUZb3ZmTr8qD1Uj2mK9pF4vX8qL6tN0wY3sR1hB5cA7dE9gH2jP4n
 awsToken := "AKIALALEMEL33243OLIA"
+Raw:      `awsToken := \"AKIALALEMEL33243OKIA\ // gitleaks:allow"`,
+Line:        `awsToken := \"AKIALALEMEL33243OKIA\"`,
+Line:        `url = "http://cafeb4b3:d3adb33f@enterprise.contribsys.com:80/path?param1=true&param2=false#heading1"`
+Match:       "aws_secret_access_key = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEFUCDlEX1A"
+Line:        "\n\taws_token := \"AKIALALEMEL33243OLIA\""
+
 
 # Azure Service Principal
 AZURE_TENANT_ID=72f988bf-86f1-41af-91ab-2d7cd011db47
@@ -15,14 +22,47 @@ AZURE_CLIENT_ID=6f34d781-a7d9-4d9c-b687-f1870e3a6147
 AZURE_CLIENT_SECRET=Xj8Q~fP9kNzM5vR2tL7wY4uH8cA1bD3gF5hJ9mK2
 AZURE_SUBSCRIPTION_ID=a534f988-4321-9876-bc12-1234567890ab
 
+
 # Database Connections
 POSTGRES_CONNECTION_STRING=postgresql://dbadmin:P@ssw0rd123!@db-prod-cluster.xyz.region.rds.amazonaws.com:5432/maindb
 MONGODB_URI=mongodb+srv://admin:dB9x$mK2pL@cluster0.mongodb.net/production?retryWrites=true&w=majority
 REDIS_URL=redis://default:s3cr3t@redis-12345.c12.us-east-1-1.ec2.cloud.redislabs.com:12345
 
+
+# DB Credentials
+DB_PASSWORD=8ae31cacf141669ddfb5da
+Line:        "\nDB_PASSWORD=8ae31cacf141669ddfb5da"
+
+
+# Misc
+Line:        "let username = 'james@mail.com';\nlet password = 'Summer2024!';"
+
+
+# Private Keys
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACA8YWKYztuuvxUIMomc3zv0OdXCT57Cc2cRYu3TMbX9XAAAAJDiKO3C4ijt
+wgAAAAtzc2gtZWQyNTUxOQAAACA8YWKYztuuvxUIMomc3zv0OdXCT57Cc2cRYu3TMbX9XA
+AAAECzmj8DGxg5YHtBK4AmBttMXDQHsPAaCyYHQjJ4YujRBTxhYpjO266/FQgyiZzfO/Q5
+1cJPnsJzZxFi7dMxtf1cAAAADHJvb3RAZGV2aG9zdAE=
+-----END OPENSSH PRIVATE KEY-----
+
+-----BEGIN PRIVATE KEY-----
+135f/bRUBHrbHqLY/xS3I7Oth+8rgG+0tBwfMcbk05Sgxq6QUzSYIQAop+WvsTwk2sR+C38g0Mnb
+u+QDkg0spw==
+-----END PRIVATE KEY-----
+
+Match:       "-----BEGIN PRIVATE KEY-----\n435f/bRUBHrbHqLY/xS3I7Oth+8rgG+0tBwfMcbk05Sgxq6QUzSYIQAop+WvsTwk2sR+C38g0Mnb\nu+QDkg0spw==\n-----END PRIVATE KEY-----",
+
+
+
+
+# Encoded Private Keys
+private_key: 'LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tCjQzNWYvYlJVQkhyYkhxTFkveFMzSTdPdGgrOHJnRyswdEJ3Zk1jYmswNVNneHE2UVV6U1lJUUFvcCtXdnNUd2syc1IrQzM4ZzBNbmIKdStRRGtnMHNwdz09Ci0tLS0tRU5EIFBSSVZBVEUgS0VZLS0tLS0K'
+
+
 # API Keys and Tokens
 GITHUB_TOKEN=ghp_Uj2mK9pF4vX8qL6tN0wY3sR1hB5cA7dE9gH2
 GITHUB_OAUTH_TOKEN=gho_kP8mN4vR2xL9jH7tF5dC3gA1bE8qW6yU9iM4
-
 SLACK_BOT_TOKEN=xoxb-1234567890123-1234567890123-A1B2C3D4E5F6G7H8I9J0
 SLACK_APP_TOKEN=xapp-1-A1B2C3D4E5F6-1234567890123-a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0
