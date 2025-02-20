@@ -22,4 +22,4 @@ const dbURL = "mongodb://user:password@yourdatabase.com:27017/mydatabase";
 #!/bin/bash
 
 export AWS_ACCESS_KEY_ID="AKIAIOSFODNN7EX9FOXJ"
-export AWS_SECRET_ACCESS_KEY="wJalrXUtnFEMI/K7MDENG/bPxRfiCYE%A8PL07FG"
+export AWS_SECRET_ACCESS_KEY="wJalrXUtnFEMI/K7MDENG/bPxRfiCYEQA8PL07FG"
